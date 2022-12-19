@@ -2,18 +2,23 @@
   <div class="wrapper 	">
     <div class="border-b-2 border-indigo-500">
       <div class="header mx-5  flex flex-row justify-around ">
-        <p class="font-bold px-2 py-6 text-blue-500">ASSET MANAGER</p>
+        <p class="font-bold px-2 py-8 text-blue-500">ASSET MANAGER</p>
 
-        <button pButton pRipple type="button"  class="p-button-text">< Back</button>
+        <button pButton  type="button"  class="p-button-text">< Back</button>
 
-        <i class="pi pi-sort-amount-down my-4" style="font-size: 1.7rem"></i>
-        <i class="pi pi-list my-4" style="font-size: 1.7rem"></i>
-        <i class="pi pi-filter my-4" style="font-size: 1.7rem"></i>
 
-        <span class="p-input-icon-left my-2">
-            <i class="pi pi-search"></i>
+          <app-drop-menu-header class="mt-4"></app-drop-menu-header>
+
+          <app-drop-menu-header-view class="mt-4"></app-drop-menu-header-view>
+
+          <app-drop-menu-header-types class="mt-4"></app-drop-menu-header-types>
+
+
+
+        <span class="p-input-icon-left mt-4">
+
             <input type="text" pInputText  placeholder="Search">
-
+            <i class="pi pi-search" style="font-size: 1.3rem"></i>
 
         </span>
       </div>
