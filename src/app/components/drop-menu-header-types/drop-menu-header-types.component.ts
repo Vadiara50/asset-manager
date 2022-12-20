@@ -13,7 +13,8 @@ export class DropMenuHeaderTypesComponent {
 
   types: Type[];
 
-  selectedType: string;
+  selectedType = '';
+
 
   constructor() {
     this.types = [

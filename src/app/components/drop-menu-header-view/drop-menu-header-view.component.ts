@@ -10,9 +10,10 @@ interface View {
   styleUrls: ['./drop-menu-header-view.component.scss']
 })
 export class DropMenuHeaderViewComponent {
+
   views: View[];
 
-  selectedView: string;
+  selectedView = '';
 
   constructor() {
     this.views = [

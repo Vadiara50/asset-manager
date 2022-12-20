@@ -12,9 +12,11 @@ interface Sort {
 })
 export class DropMenuHeaderComponent {
 
+
   sorts: Sort[];
 
-  selectedSort: string;
+  selectedSort = '';
+
 
   constructor() {
     this.sorts = [
