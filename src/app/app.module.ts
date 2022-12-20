@@ -15,9 +15,8 @@ import { FormsModule} from "@angular/forms";
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DropMenuHeaderViewComponent } from './components/drop-menu-header-view/drop-menu-header-view.component';
 import { DropMenuHeaderTypesComponent } from './components/drop-menu-header-types/drop-menu-header-types.component';
-import {  TableModule} from 'primeng/table';
-
-
+import { TableModule} from 'primeng/table';
+import {PanelMenuModule} from 'primeng/panelmenu';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,8 @@ import {  TableModule} from 'primeng/table';
     DropdownModule,
     FormsModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
