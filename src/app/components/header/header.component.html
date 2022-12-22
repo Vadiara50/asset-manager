@@ -1,23 +1,25 @@
 
-  <div class="wrapper">
-    <div class="border-b-2 border-indigo-500">
-      <div class="header   flex flex-row justify-around ">
-        <p class="font-bold px-2 py-8 text-blue-500">ASSET MANAGER</p>
+  <div class="pt-8 pb-0 ">
+    <div class="border-b-2 border-indigo-500 ">
+      <div class="header flex flex-row justify-around align-bottom">
+        <p class="font-bold px-2 py-5  text-blue-500">ASSET MANAGER</p>
 
-        <button pButton  type="button"  class="p-button-text">< Back</button>
-
-        <p-panelMenu class = "pt-4" [model]="items"  appendTo="body"></p-panelMenu>
+        <button pButton  type="button"  class="p-button-text px-0 py-0">< Back</button>
 
 
-          <app-drop-menu-header class="mt-4"></app-drop-menu-header>
-
-          <app-drop-menu-header-view class="mt-4"></app-drop-menu-header-view>
-
-          <app-drop-menu-header-types class="mt-4"></app-drop-menu-header-types>
+        <p-menu [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'" #menu [popup]="true" [model]="items"></p-menu>
+        <button type="button" class="h-12" pButton icon="pi pi-list" label="Adv_May_22" (click)="menu.toggle($event)"></button>
 
 
+          <app-drop-menu-header ></app-drop-menu-header>
 
-        <span class="p-input-icon-left mt-4">
+          <app-drop-menu-header-view ></app-drop-menu-header-view>
+
+          <app-drop-menu-header-types ></app-drop-menu-header-types>
+
+
+
+        <span class="p-input-icon-left">
 
            <i class="pi pi-search" style="font-size: 1rem"></i>
             <input type="text" pInputText  placeholder="Search">

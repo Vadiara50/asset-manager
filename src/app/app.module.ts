@@ -16,7 +16,9 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DropMenuHeaderViewComponent } from './components/drop-menu-header-view/drop-menu-header-view.component';
 import { DropMenuHeaderTypesComponent } from './components/drop-menu-header-types/drop-menu-header-types.component';
 import { TableModule} from 'primeng/table';
-import {PanelMenuModule} from 'primeng/panelmenu';
+import { MenuModule} from 'primeng/menu';
+import { DragDropActionsPanelComponent } from './components/drag-drop-actions-panel/drag-drop-actions-panel.component';
+import { FolderDetailsComponent } from './components/folder-details/folder-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import {PanelMenuModule} from 'primeng/panelmenu';
     FileListComponent,
     DropMenuHeaderComponent,
     DropMenuHeaderViewComponent,
-    DropMenuHeaderTypesComponent
+    DropMenuHeaderTypesComponent,
+    DragDropActionsPanelComponent,
+    FolderDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,7 @@ import {PanelMenuModule} from 'primeng/panelmenu';
     FormsModule,
     BrowserAnimationsModule,
     TableModule,
-    PanelMenuModule
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
