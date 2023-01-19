@@ -19,6 +19,7 @@ import { TableModule} from 'primeng/table';
 import { MenuModule} from 'primeng/menu';
 import { DragDropActionsPanelComponent } from './components/drag-drop-actions-panel/drag-drop-actions-panel.component';
 import { FolderDetailsComponent } from './components/folder-details/folder-details.component';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,6 @@ import { FolderDetailsComponent } from './components/folder-details/folder-detai
     DropMenuHeaderTypesComponent,
     DragDropActionsPanelComponent,
     FolderDetailsComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,8 @@ import { FolderDetailsComponent } from './components/folder-details/folder-detai
     FormsModule,
     BrowserAnimationsModule,
     TableModule,
-    MenuModule
+    MenuModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

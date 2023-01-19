@@ -1,1 +1,21 @@
-<p>folder-details works!</p>
+  <div class="border-b-2 border-r-2 border-l-2 border-indigo-500 h-full">
+
+    <p-card header="Picture_1.png"  styleClass="p-card-shadow" class="text-center"  >
+      <ng-template pTemplate="header">
+        <img alt="Card" src="assets/img/malinkakat_ru_1.jpg">
+      </ng-template>
+      <p>Fri 25, May 2022 4:51pm</p>
+      <ng-template pTemplate="footer">
+
+
+        <span class="p-buttonset">
+    <button pButton pRipple label="Move" icon="pi pi-directions" ></button>
+    <button pButton pRipple label="Rename" icon="pi pi-file-edit" [style]="{'margin-left': '.5em'}"></button>
+    <button pButton pRipple label="Delete" icon="pi pi-trash" [style]="{'margin-left': '.5em'}" ></button>
+</span>
+
+      </ng-template>
+    </p-card>
+  </div>
+
+
