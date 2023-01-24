@@ -32,6 +32,7 @@ import {CardModule} from 'primeng/card';
     DropMenuHeaderTypesComponent,
     DragDropActionsPanelComponent,
     FolderDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
