@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./file-list.component.scss']
 })
 export class FileListComponent {
+  selectedValues: string[] = [];
 
 }

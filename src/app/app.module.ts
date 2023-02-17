@@ -20,6 +20,8 @@ import { MenuModule} from 'primeng/menu';
 import { DragDropActionsPanelComponent } from './components/drag-drop-actions-panel/drag-drop-actions-panel.component';
 import { FolderDetailsComponent } from './components/folder-details/folder-details.component';
 import {CardModule} from 'primeng/card';
+import {CheckboxModule} from 'primeng/checkbox';
+
 
 @NgModule({
   declarations: [
@@ -46,8 +48,10 @@ import {CardModule} from 'primeng/card';
     TableModule,
     MenuModule,
     CardModule,
+    CheckboxModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
