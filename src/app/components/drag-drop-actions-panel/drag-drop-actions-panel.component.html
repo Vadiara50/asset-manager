@@ -3,12 +3,15 @@
   <p>You can drag and drop your files here or,
     <br>
 
-    <a href="#" class="underline underline-offset-1">browse to upload</a>
-    <br>
+   <!-- <a href="#" class="underline underline-offset-1">browse to upload</a>
+    <br>-->
 
-    <i class="pi pi-upload pt-3" style="font-size: 3rem"></i>
+<!--    <i class="pi pi-upload pt-3" style="font-size: 3rem"></i>-->
   </p>
 
+  <p-fileUpload #fubauto  class="px-3" chooseIcon="pi pi-upload" mode="basic" name="demo[]" url="./upload.php" accept="image/*"   [auto]="true" chooseLabel="Browse to upload"></p-fileUpload>
 </div>
+
+
 
 

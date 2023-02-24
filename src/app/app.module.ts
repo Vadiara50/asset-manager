@@ -21,6 +21,8 @@ import { DragDropActionsPanelComponent } from './components/drag-drop-actions-pa
 import { FolderDetailsComponent } from './components/folder-details/folder-details.component';
 import {CardModule} from 'primeng/card';
 import {CheckboxModule} from 'primeng/checkbox';
+import {FileUploadModule} from 'primeng/fileupload';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -34,7 +36,6 @@ import {CheckboxModule} from 'primeng/checkbox';
     DropMenuHeaderTypesComponent,
     DragDropActionsPanelComponent,
     FolderDetailsComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -49,6 +50,8 @@ import {CheckboxModule} from 'primeng/checkbox';
     MenuModule,
     CardModule,
     CheckboxModule,
+    FileUploadModule,
+    HttpClientModule
   ],
   providers: [
   ],
